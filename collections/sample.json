@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "First_request",
+			"name": "Second_request",
 			"request": {
 				"method": "GET",
 				"header": [],
