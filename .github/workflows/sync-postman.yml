@@ -28,6 +28,6 @@ jobs:
         GITHUB_COLLECTION_PATH="./collections/sample.json"
         
         curl --location --request PUT "https://api.getpostman.com/collections/$COLLECTION_UID" \
-        --header "x-xpi-key: $POSTMAN_API_KEY" \
+        --header "x-api-key: $POSTMAN_API_KEY" \
         --header "Content-Type: application/json" \
         --data "@$GITHUB_COLLECTION_PATH"
