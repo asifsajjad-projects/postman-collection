@@ -26,7 +26,7 @@ jobs:
         npm install -g newman
 
         # Run the Postman API to update the collection
-        COLLECTION_UID="your-postman-collection-uid"
+        COLLECTION_UID="9492a11b-67db-4119-9bc4-36cde8669a17"
         GITHUB_COLLECTION_PATH="./collections/sample.json"
         
         curl --location --request PUT "https://api.getpostman.com/collections/$COLLECTION_UID" \
