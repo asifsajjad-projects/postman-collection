@@ -16,20 +16,18 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '20'
+        node-version: '18'
 
     - name: Update Postman Collection
       env:
         POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
       run: |
-        # Install newman
-        npm install -g newman
 
         # Run the Postman API to update the collection
         COLLECTION_UID="9492a11b-67db-4119-9bc4-36cde8669a17"
         GITHUB_COLLECTION_PATH="./collections/sample.json"
         
         curl --location --request PUT "https://api.getpostman.com/collections/$COLLECTION_UID" \
-        --header "X-Api-Key: $POSTMAN_API_KEY" \
+        --header "x-xpi-key: $POSTMAN_API_KEY" \
         --header "Content-Type: application/json" \
         --data "@$GITHUB_COLLECTION_PATH"
