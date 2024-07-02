@@ -4,11 +4,7 @@
 		"name": "Test_ABC",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "28736420",
-		"version":{
-			 "major": "2",
-            		"minor": "0",
-           		"patch": "0",
-		}
+		"version": "2.0.0"
 	},
 	"item": [
 		{
