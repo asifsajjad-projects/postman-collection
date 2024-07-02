@@ -3,11 +3,16 @@
 		"_postman_id": "9492a11b-67db-4119-9bc4-36cde8669a17",
 		"name": "Test_ABC",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "28736420"
+		"_exporter_id": "28736420",
+		"version":{
+			 "major": "2",
+            		"minor": "0",
+           		"patch": "0",
+		}
 	},
 	"item": [
 		{
-			"name": "Third_request",
+			"name": "Fourth_request",
 			"request": {
 				"method": "GET",
 				"header": [],
